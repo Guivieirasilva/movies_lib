@@ -1,0 +1,18 @@
+*{
+   font-family: helvetica;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: #19242E;
+   color: #ffffff;
+}
+a{
+   text-decoration: none;
+   color: #ebeb62 ;
+   transition: .5s;
+}
+a:hover{
+   color: #b8930c ;
+}
