@@ -7,6 +7,7 @@ const imageUrl = import.meta.env.VITE_IMG
 function MovieCard({movie, showLink = true}){
    return(
       <div className="movie-card" >
+         
          <img src={imageUrl + movie.poster_path} alt={movie.title}></img>
          <h2>{movie.title}</h2>
          <p>
