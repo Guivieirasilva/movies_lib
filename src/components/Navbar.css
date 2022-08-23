@@ -39,7 +39,33 @@
    transition: .4s;
 }
 
-#navbar form button:hover{
+#navbar form button:hover, #navbar form button:focus{
    background-color: transparent;
    color: #f7D354;
+}
+@media screen and (max-width:590px) {
+   #navbar h2 a {
+      font-size: 1.4rem;
+      gap: .3rem;
+   }
+   #navbar input{
+      padding: .2rem;
+      font-size: .8rem;
+   }
+   #navbar form button{
+      padding: .2rem;
+      font-size: 1rem;
+   }
+}
+@media screen and (max-width:420px){
+   #navbar{
+      padding: 1rem;
+   }
+   #navbar input{
+      font-size: .7rem;
+   }
+   #navbar form button{
+      padding: .3rem;
+      font-size: .9rem;
+   }
 }

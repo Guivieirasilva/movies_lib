@@ -6,6 +6,7 @@ import "./moviesGrid.css"
 const moviesURL = import.meta.env.VITE_API
 const apiKey = import.meta.env.VITE_API_KEY
 
+
 function Home() {
   const [topMovies, setTopMovies] = useState([])
 
@@ -18,14 +19,14 @@ function Home() {
   }
 
   useEffect(() =>{
-    const topRatedUrl = `${moviesURL}top_rated?${apiKey}`
+    const topRatedUrl = `${moviesURL}popular?${apiKey}`
 
     getTopRatedMovies(topRatedUrl)
   },[])
 
   return (
     <div className="container">
-      <h2 className="title">Melhores Filmes</h2>
+      <h2 className="title">Filmes Populares</h2>
       <div className="movies-container">
         {topMovies.length === 0 && <p>Carregando...</p>}
         {topMovies.length > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
