@@ -3,8 +3,8 @@ import MovieCard from "../components/MovieCard"
 
 import "./moviesGrid.css"
 
-const moviesURL = import.meta.env.VITE_API
-const apiKey = import.meta.env.VITE_API_KEY
+const moviesURL = import.meta.env.VITE_API;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 function Home() {
   const [topMovies, setTopMovies] = useState([])

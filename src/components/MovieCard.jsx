@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom"
-
 import {FaStar} from "react-icons/fa"
 
 const imageUrl = import.meta.env.VITE_IMG
 
-function MovieCard({movie, showLink = true}){
+export default function MovieCard({movie, showLink = true}){
    return(
       <div className="movie-card" >
          
@@ -17,5 +16,3 @@ function MovieCard({movie, showLink = true}){
       </div>
    )
 }
-
-export default MovieCard
