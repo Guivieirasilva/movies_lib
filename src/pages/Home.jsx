@@ -6,11 +6,10 @@ import "./moviesGrid.css"
 const moviesURL = import.meta.env.VITE_API
 const apiKey = import.meta.env.VITE_API_KEY
 
-
 function Home() {
   const [topMovies, setTopMovies] = useState([])
 
-  const getTopRatedMovies = async (url) => {
+  const getPopularMovies = async (url) => {
 
     const res = await fetch(url)
     const data = await res.json()
@@ -19,9 +18,9 @@ function Home() {
   }
 
   useEffect(() =>{
-    const topRatedUrl = `${moviesURL}popular?${apiKey}`
+    const popularUrl = `${moviesURL}popular?${apiKey}`
 
-    getTopRatedMovies(topRatedUrl)
+    getPopularMovies(popularUrl)
   },[])
 
   return (
