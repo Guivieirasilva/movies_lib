@@ -24,7 +24,7 @@ function Navbar () {
      <Link to="/">MoviesLib<BiCameraMovie /></Link>
    </h2>
    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Busque um filme" 
+      <input type="text" placeholder="search for a movie" 
       onInput={(e) => setSearch(e.target.value)}
       value={search}
       />

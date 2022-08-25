@@ -16,3 +16,16 @@ a{
 a:hover{
    color: #b8930c ;
 }
+body::-webkit-scrollbar {
+   width: 6px
+ }
+ 
+ body::-webkit-scrollbar-track {
+   background: transparent;
+ }
+ 
+ body::-webkit-scrollbar-thumb {
+   background-color: transparent;   
+   border-radius: 20px;       
+   border: 1px solid #ebeb62; 
+ }

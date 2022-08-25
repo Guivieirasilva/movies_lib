@@ -4,6 +4,7 @@
    flex-direction: column;
    max-width: 600px;
    margin: 2rem auto;
+   padding: 1rem 0;
 }
 .movie-page svg{
    font-size: 1.5rem;
@@ -37,8 +38,8 @@
    margin-bottom: 2rem;
 }
 .info{
-   margin-left: 10px;
-   margin-right: 10px;
+   margin-left: 30px;
+   margin-right: 30px;
    margin-bottom: 1.7rem;
 }
 .info h3{
@@ -47,10 +48,10 @@
    align-items: center;
    gap: 0.5rem;
 }
-.description{
+.production{
    padding-bottom: 10rem ;
 }
-.description p{
+.production p{
    line-height: 1.4rem;
    letter-spacing: .1px;
 }

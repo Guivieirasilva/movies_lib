@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
+import {BiCameraHome} from "react-icons/bi"
+import {FaFontAwesomeFlag} from "react-icons/fa"
 import {
   BsGraphUp, 
   BsWallet2, 
   BsHourglassSplit, 
-  BsCameraVideoFill,
+  BsCameraVideo,
   BsFillFileEarmarkTextFill
 } from "react-icons/bs"
 
@@ -45,29 +47,54 @@ export default function Movie () {
         <>
           <MovieCard movie={movie} showLink={false} />
           <p className="tagline">{movie.tagline}</p>
+
           <div className="info">
             <h3>
-              <BsWallet2 /> Orçamento:
+              <BsCameraVideo /> Genre:
+            </h3>
+            <p>{movie.genres.map(item => `${item.name}. ` )}</p>
+          </div>
+
+          <div className="info ">
+            <h3>
+              <BsFillFileEarmarkTextFill /> synopsis:
+            </h3>
+            <p>{movie.overview}</p>
+          </div>
+
+          <div className="info">
+            <h3>
+              <BsHourglassSplit /> Duration:
+            </h3>
+            <p>{movie.runtime} minutes</p>
+          </div>
+
+          <div className="info">
+            <h3>
+              <BsWallet2 /> budget:
             </h3>
             <p>{formatCurrency(movie.budget)}</p>
           </div>
+
           <div className="info">
             <h3>
-              <BsGraphUp /> Receita:
+              <BsGraphUp /> Revenue:
             </h3>
             <p>{formatCurrency(movie.revenue)}</p>
           </div>
+          
           <div className="info">
             <h3>
-              <BsHourglassSplit /> Duração:
+              <FaFontAwesomeFlag /> production country:
             </h3>
-            <p>{movie.runtime} Minutos</p>
+            <p>{movie.production_countries.map(item => `${item.name}. ` )}</p>
           </div>
-          <div className="info description">
+
+          <div className="info production">
             <h3>
-              <BsFillFileEarmarkTextFill /> Descrição:
+              <BiCameraHome /> production companies:
             </h3>
-            <p>{movie.overview}</p>
+            <p>{movie.production_companies.map(item => `${item.name}. ` )}</p>
           </div>
         </>
       )}
