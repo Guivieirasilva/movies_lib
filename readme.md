@@ -1,14 +1,16 @@
 # Movies Lib
 
-Movies Lib é uma Biblioteca de filmes, contendo detalhes dos filmes como:
+Movies Lib é uma Biblioteca de filmes, desenvolvido em ReactJS, consumindo a API de filmes do https://themoviedb.org/ , contendo detalhes dos filmes como:
+
 - Orçamento 
 - Receita 
 - Duração
 - Sinopse
 - Gerero
 - Empresas produtoras
+- País de origem
 
-Desenvolvido em ReactJS, consumindo a API de filmes do https://themoviedb.org/
+
 
 ## Utilidades
 
