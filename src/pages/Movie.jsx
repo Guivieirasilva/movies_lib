@@ -48,53 +48,50 @@ export default function Movie () {
           <MovieCard movie={movie} showLink={false} />
           <p className="tagline">{movie.tagline}</p>
 
-          <div className="info">
-            <h3>
-              <BsCameraVideo /> Genre:
-            </h3>
-            <p>{movie.genres.map(item => `${item.name}. ` )}</p>
-          </div>
-
-          <div className="info ">
-            <h3>
-              <BsFillFileEarmarkTextFill /> synopsis:
-            </h3>
-            <p>{movie.overview}</p>
-          </div>
-
-          <div className="info">
-            <h3>
-              <BsHourglassSplit /> Duration:
-            </h3>
-            <p>{movie.runtime} minutes</p>
-          </div>
-
-          <div className="info">
-            <h3>
-              <BsWallet2 /> budget:
-            </h3>
-            <p>{formatCurrency(movie.budget)}</p>
-          </div>
-
-          <div className="info">
-            <h3>
-              <BsGraphUp /> Revenue:
-            </h3>
-            <p>{formatCurrency(movie.revenue)}</p>
-          </div>
-          
-          <div className="info">
-            <h3>
-              <FaFontAwesomeFlag /> production country:
-            </h3>
-            <p>{movie.production_countries.map(item => `${item.name}. ` )}</p>
-          </div>
-
-          <div className="info production">
-            <h3>
-              <BiCameraHome /> production companies:
-            </h3>
-            <p>{movie.production_companies.map(item => `${item.name}. ` )}</p>
+          <div className="informations">
+            <div className="info">
+              <h3>
+                <BsCameraVideo /> Genre:
+              </h3>
+              <p>{movie.genres.map(item => `${item.name}. ` )}</p>
+            </div>
+            <div className="info ">
+              <h3>
+                <BsFillFileEarmarkTextFill /> synopsis:
+              </h3>
+              <p>{movie.overview}</p>
+            </div>
+            <div className="info">
+              <h3>
+                <BsHourglassSplit /> Duration:
+              </h3>
+              <p>{movie.runtime} minutes</p>
+            </div>
+            <div className="info">
+              <h3>
+                <BsWallet2 /> budget:
+              </h3>
+              <p>{formatCurrency(movie.budget)}</p>
+            </div>
+            <div className="info">
+              <h3>
+                <BsGraphUp /> Revenue:
+              </h3>
+              <p>{formatCurrency(movie.revenue)}</p>
+            </div>
+            
+            <div className="info">
+              <h3>
+                <FaFontAwesomeFlag /> production country:
+              </h3>
+              <p>{movie.production_countries.map(item => `${item.name}. ` )}</p>
+            </div>
+            <div className="info production">
+              <h3>
+                <BiCameraHome /> production companies:
+              </h3>
+              <p>{movie.production_companies.map(item => `${item.name}. ` )}</p>
+            </div>
           </div>
         </>
       )}
