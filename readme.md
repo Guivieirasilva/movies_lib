@@ -17,7 +17,7 @@ Desenvolvido em ReactJS, consumindo a API de filmes do https://themoviedb.org/
 - Página de detalhes sobre o filme
 - Animação de carregamento
 
-## tech
+## Stacks
 
 - React
 - React Hooks
