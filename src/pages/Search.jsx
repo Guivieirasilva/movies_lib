@@ -31,7 +31,7 @@ export default function Search () {
 
   return (
     <div className="container">
-      <h2 className="title">Results for:
+      <h2 className="title">Results for: 
         <span className="query-text">{query}</span> 
       </h2>
       <div className="movies-container">
